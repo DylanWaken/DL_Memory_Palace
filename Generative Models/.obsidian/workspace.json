@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "aadf8b09148758fd",
+    "type": "split",
+    "children": [
+      {
+        "id": "5ed2c7c8c15d19a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f8986859eaef4f36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Basic Probability Theory/Likelihood.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ca41064a99654a9e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Basic Optimization Theory/Karush–Kuhn–Tucker Conditions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8c147866293ada30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Basic Machine Learning/Support Vector Machines.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "1f71715bcd6ea6d0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d50d8a59af356119",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Basic Machine Learning/Paper/CS229_ClassNote.pdf"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "50fef7e47b6bda0d",
+    "type": "split",
+    "children": [
+      {
+        "id": "3f2631a8ac8043d3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d51ba2abb2689ade",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9d1536bea21f0d1e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "de27904c8d5d095c",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 298.5
+  },
+  "right": {
+    "id": "76f1d880c57f7c81",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b7b2b1c21eeaf9b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b465f9e8ef8d8b3e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Basic Machine Learning/Support Vector Machines.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "2d39d6d67f41e4e0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0e555bbb0a3cfa4b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Basic Machine Learning/Support Vector Machines.md"
+              }
+            }
+          },
+          {
+            "id": "0c88f9247055347b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Basic Machine Learning/Support Vector Machines.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "active": "8c147866293ada30",
+  "lastOpenFiles": [
+    "Basic Optimization Theory/Karush–Kuhn–Tucker Conditions.md",
+    "Basic Optimization Theory/Lagrange Duality.md",
+    "Basic Optimization Theory/Lagrange Multiplier.md",
+    "Basic Optimization Theory/Convex Optimization Problem.md",
+    "Basic Optimization Theory/Optimization Problem.md",
+    "Basic Probability Theory/Likelihood.md",
+    "Basic Machine Learning/LASSO.md",
+    "Basic Machine Learning/Paper/CS229_ClassNote.pdf",
+    "Basic Machine Learning/Kernel.md",
+    "Basic Machine Learning/Support Vector Machines.md"
+  ]
+}
