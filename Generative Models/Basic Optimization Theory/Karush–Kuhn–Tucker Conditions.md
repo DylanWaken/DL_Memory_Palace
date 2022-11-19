@@ -1,19 +1,19 @@
 ----
 #BasicOptimizationTheory 
 
-Karush-Kuhn-Tucker Conditions (KKT) is the first derivative test (or first order necessary conditions) for solving non-linear optimization problem provided the constraints are satisfied.  The KKT conditions is the generalized [[Lagrange Multiplier]] methods that allows operations beyond equality constraints. 
+Karush-Kuhn-Tucker Conditions (KKT) is the first derivative test (or first order necessary conditions) for solving non-linear [[optimization problem]] provided the constraints are satisfied.  The KKT conditions is the generalized [[Lagrange Multiplier]] methods that allows operations beyond equality constraints. 
 
 ## Karush-Kuhn-Tucker Theorem
 
-For the optimization problem as follow:
+For the [[optimization problem]] as follow:
 $$\min _x f(x) \quad s.t. \quad g_i(x) \leq 0 \quad h_j(x) =0$$
 where $x \in X$ is the optimization variable chosed from a convex subset of $\mathbb{R}^n$ 
 We define the Lagrangian of this problem as:
 $$\mathcal{L}(x, \mu,\lambda) = f(x) + \mu^Tg(x) + \lambda^Th(x)$$
 - $\mu$ is the inequality constraint KKT multipliers, $g(x) = [g_1(x), ..., g_m(x)]$ 
-- $\lambda$ is the equality constraint KKT multipliers, $h(x) = [h_1(x),...,h_l(x)]$
+- $\lambda$ is the equality constraint Lagrange multipliers, $h(x) = [h_1(x),...,h_l(x)]$
 
-The ***Karush-Kuhn-Tucker Theorem*** states that: If $(x^*, \hat{\mu})$ is a ***saddle point*** of Lagrangian function $\mathcal{L}(x, \mu)$ in $x \in X$, $\mu \geq 0$, then $x^*$ is an optimal vector for the above optimization problem. 
+The ***Karush-Kuhn-Tucker Theorem*** states that: If $(x^*, \hat{\mu})$ is a ***saddle point*** of Lagrangian function $\mathcal{L}(x, \mu)$ in $x \in X$, $\mu \geq 0$, then $x^*$ is an optimal vector for the above [[optimization problem]]. 
 
 The proof of KKT Theorem used hyperplane separation theorem, since the definition is the same as finding a supporting hyperplane on the feasible set $\Gamma = \{x \in X : g_i(x) \leq 0, i=1...m\}$ 
 

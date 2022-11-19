@@ -14,7 +14,7 @@ And the Lagrangian is defined with KKT multipliers ([[Karush–Kuhn–Tucker Con
 $$\mathcal{L}(x, \mu, \lambda) = f(x) + \sum _{i=1} ^m \mu_i g_i(x) + \sum _{j=1} ^l \lambda_jh_j(x)$$
 And with $\mu$ and $\lambda$ called the dual variables. The Lagrange dual function is defined as:
 $$g(\mu,\lambda) = \inf _{x \in \mathcal{D}} \mathcal{L}(x, \mu, \lambda)$$
-- $\inf _x$ stands for the maximum value of x in the given set (infimum)
+- $\inf _x$ stands for the infimum value of x in the given set 
 -  $\mathcal{D}$ is the domain of x with non-empty interior. 
 
 In the dual problem. $g$ will be the new objective function.
@@ -29,4 +29,3 @@ For the convex function $f(x)$ and $g_i(x)$ , the infimum is achieved when the g
 
 $$\max_{x, \mu} f(x) + \sum _{i=1} ^m \mu_i g_i(x) $$
 $$ s.t. \quad \mu_i \geq 0 ,i=1,..,m \quad \nabla f(x) + \sum _{i=1} ^m \mu_i \nabla g_i(x) = 0$$
-

@@ -178,15 +178,15 @@
   },
   "active": "8c147866293ada30",
   "lastOpenFiles": [
-    "Basic Optimization Theory/Karush–Kuhn–Tucker Conditions.md",
     "Basic Optimization Theory/Lagrange Duality.md",
-    "Basic Optimization Theory/Lagrange Multiplier.md",
+    "Basic Machine Learning/Support Vector Machines.md",
+    "Basic Optimization Theory/Karush–Kuhn–Tucker Conditions.md",
     "Basic Optimization Theory/Convex Optimization Problem.md",
+    "Basic Optimization Theory/Lagrange Multiplier.md",
     "Basic Optimization Theory/Optimization Problem.md",
-    "Basic Probability Theory/Likelihood.md",
-    "Basic Machine Learning/LASSO.md",
-    "Basic Machine Learning/Paper/CS229_ClassNote.pdf",
-    "Basic Machine Learning/Kernel.md",
-    "Basic Machine Learning/Support Vector Machines.md"
+    "Basic Machine Learning/Linear Regression.md",
+    "Basic Machine Learning/L2 Regularization.md",
+    "Basic Machine Learning/L1 Regularization.md",
+    "Basic Machine Learning/LASSO Regression.md"
   ]
 }
