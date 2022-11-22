@@ -27,10 +27,10 @@ If we assume parameters $\theta$ is subjected to a optimal distribution:
 $$\theta \sim f(\theta)$$
 if we add this distribution to the optimization target:
 $$\mathcal{L}(\theta) = \mathcal{L}(\theta;X,\vec{y}) = p(\vec{y}|X;\theta) \cdot f(\theta)$$
-And run the maximum [[likelihood]] estimation:
+And run the maximum [[Likelihood]] estimation:
 $$\mathcal{L}(\theta) = (\prod _{i=1} ^N p(y^{(i)}|x^{(i)};\theta) ) \cdot f(\theta)$$
-Take the log [[likelihood]]:
+Take the log [[Likelihood]]:
 $$\mathcal{l}(\theta) = \sum _{i=1} ^N log(p(y^{(i)}|x^{(i)};\theta) + log(f(\theta)))$$
-From here, we are able to derive the term $log(f(\theta))$ with the assumed distribution. Interestingly, if we have $\theta$ subject to [[Laplace distribution]], we get [[L1 regularization]] term, and with $\theta$ subject to [[Gaussian Distribution]], we have L2 regularizatoin term. 
+From here, we are able to derive the term $log(f(\theta))$ with the assumed distribution. Interestingly, if we have $\theta$ subject to [[Laplace Distribution]], we get [[L1 regularization]] term, and with $\theta$ subject to [[Gaussian Distribution]], we have L2 regularizatoin term. 
 
 (detailed process in L1 and L2 notes)

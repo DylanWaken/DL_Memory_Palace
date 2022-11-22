@@ -1,6 +1,6 @@
 -----
 #BasicMachineLearning 
->  ***Problem Type***: [[CLassification Problem]], [[Supervised Learning]]
+>  ***Problem Type***: [[Classification Problem]], [[Supervised Learning]]
 > ***Solution Type***:  Iterative Solution
 > *GIVEN:* input featurs $X \in \mathbb{R}^{n \times N}$ , labels $y = [y^{(1)} ... y^{(N)}] \in \mathbb{R}^{c \times N}$ 
 > SOLVE: parameters $\theta \in \mathbb{R}^{n \times c} = [\theta_1, \theta_2,...,\theta_c]$ such that $\min _\theta E(\theta) = \frac{1}{N} \sum _{i=1} ^N \sum _{j=1} ^c y_{ji} \log f_j(x^{(i)})$ in which: $f(x) = [f_1(x),...,f_c(x)]^T$, $f(x)$ is the sofrmax operation

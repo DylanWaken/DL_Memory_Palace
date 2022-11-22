@@ -16,7 +16,7 @@ From the [[Regularization]] note, we have the current [[Maximum Likelihood Estim
 $$\mathcal{l}(\theta) = \sum _{i=1} ^N log(p(y^{(i)}|x^{(i)};\theta)) + log(f(\theta))$$
 If we assume that our parameters are distributed in [[Laplace Distribution]]:
 $$f(\theta; \mu, b) = \frac{1}{2b} \exp(-\frac{\theta-\mu}{b})$$
-And by throw this into the [[likelihood]] function:
+And by throw this into the [[Likelihood]] function:
 $$\mathcal{l}(\theta) = \sum _{i=1} ^N log(p(y^{(i)}|x^{(i)};\theta)) + \log(\frac{1}{2b}) + log(\exp(-\frac{\theta-\mu}{b}))$$
 removing constants and we will have:
 $$\mathcal{l}(\theta) = \sum _{i=1} ^N log(p(y^{(i)}|x^{(i)};\theta)) -\frac{1}{b}||\theta||$$

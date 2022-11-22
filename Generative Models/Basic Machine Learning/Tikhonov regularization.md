@@ -5,7 +5,7 @@ Tikhonov [[regularization]] is the methodology for stablize numerical solutions 
 
 In the original linear regression problem, we seeks to solve $\theta$ such that:
 $$X\theta = y$$
-However, since $X$ and $y$ can be with any dimension with train data size $N$, we may have the system to be [[overdetermined]] or underdetermined (less equations than needed). This is called a ill-posed linear problem, and $X$ may have a ill-determined [[rank]].
+However, since $X$ and $y$ can be with any dimension with train data size $N$, we may have the system to be [[Overdetermined]] or underdetermined (less equations than needed). This is called a ill-posed linear problem, and $X$ may have a ill-determined [[Rank]].
 
 In the original [[Least Mean Squares]] Estimation, we have to minimize:
 $$||X\theta-y||_2^2$$
@@ -22,7 +22,7 @@ A specific case of Tikhonov [[regularization]] is the [[L2 regularization]], but
 
 Another explanation why TIkhonov regularization works:
 
-> The function acts as a [[low pass filter]] in the forward direction where $X$ maps $\theta$  to $y$. Therefore, in solving the inverse-problem, the inverse mapping operates as a [[high pass filter]] that has the undesirable tendency of amplifying noise (eigenvalues / singular values are largest in the reverse mapping where they were smallest in the forward mapping)
+> The function acts as a [[Low Pass Filter]] in the forward direction where $X$ maps $\theta$  to $y$. Therefore, in solving the inverse-problem, the inverse mapping operates as a [[High Pass Filter]] that has the undesirable tendency of amplifying noise (eigenvalues / singular values are largest in the reverse mapping where they were smallest in the forward mapping)
 
 
 

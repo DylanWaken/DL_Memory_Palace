@@ -4,63 +4,75 @@
     "type": "split",
     "children": [
       {
-        "id": "5ed2c7c8c15d19a0",
+        "id": "7fc83fc26cdfa515",
         "type": "tabs",
         "children": [
           {
-            "id": "f8986859eaef4f36",
+            "id": "c07785f9908183ae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basic Probability Theory/Likelihood.md",
+                "file": "Prerequisite Knowledge/Basic Optimization Theory/Lagrange Multiplier.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ca41064a99654a9e",
+            "id": "f9a332e981e75518",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basic Optimization Theory/Karush–Kuhn–Tucker Conditions.md",
+                "file": "Prerequisite Knowledge/Linear Algebra/Singular Value Decomposition.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8c147866293ada30",
+            "id": "3b38a91e5d495cdb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basic Machine Learning/Support Vector Machines.md",
+                "file": "Prerequisite Knowledge/Linear Algebra/Singular Value Decomposition.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "981761839854666b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "3ce4f2cfa1a6cdb6",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "0ee7d1baeacde580",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Basic Machine Learning/Principal Component Analysis.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
-      },
-      {
-        "id": "1f71715bcd6ea6d0",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d50d8a59af356119",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Basic Machine Learning/Paper/CS229_ClassNote.pdf"
-              }
-            }
-          }
-        ]
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 306.5
   },
   "right": {
     "id": "76f1d880c57f7c81",
@@ -126,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basic Machine Learning/Support Vector Machines.md",
+                "file": "Basic Machine Learning/Principal Component Analysis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basic Machine Learning/Support Vector Machines.md"
+                "file": "Basic Machine Learning/Principal Component Analysis.md"
               }
             }
           },
@@ -164,7 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basic Machine Learning/Support Vector Machines.md",
+                "file": "Basic Machine Learning/Principal Component Analysis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,17 +188,17 @@
     "direction": "horizontal",
     "width": 200
   },
-  "active": "8c147866293ada30",
+  "active": "0ee7d1baeacde580",
   "lastOpenFiles": [
-    "Basic Optimization Theory/Lagrange Duality.md",
-    "Basic Machine Learning/Support Vector Machines.md",
-    "Basic Optimization Theory/Karush–Kuhn–Tucker Conditions.md",
-    "Basic Optimization Theory/Convex Optimization Problem.md",
-    "Basic Optimization Theory/Lagrange Multiplier.md",
-    "Basic Optimization Theory/Optimization Problem.md",
     "Basic Machine Learning/Linear Regression.md",
-    "Basic Machine Learning/L2 Regularization.md",
-    "Basic Machine Learning/L1 Regularization.md",
-    "Basic Machine Learning/LASSO Regression.md"
+    "Basic Machine Learning/Soft-Margin SVM.md",
+    "Basic Machine Learning/Principal Component Analysis.md",
+    "Prerequisite Knowledge/Linear Algebra/Singular Value Decomposition.md",
+    "Prerequisite Knowledge/Linear Algebra/Orthnormal Matrix.md",
+    "Prerequisite Knowledge/Linear Algebra/Orthogonal.md",
+    "Basic Machine Learning/Sequential Minimal Optimization.md",
+    "Basic Machine Learning/Support Vector Machines.md",
+    "Prerequisite Knowledge/Linear Algebra/Singular Value.md",
+    "Prerequisite Knowledge/Linear Algebra/Conjugate Transpose.md"
   ]
 }

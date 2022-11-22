@@ -2,13 +2,13 @@
 #BasicMachineLearning 
 > ***Problem Type***: [[Classification Problem]], [[Supervised Learning]]
 > ***Solution Type***:  Iterative Solution
-> *GIVEN:* input featurs $X \in \mathbb{R}^{n \times N}$ , labels $Y \in \mathbb{R}^N$ 
+> *GIVEN:* input featurs $X \in \mathbb{R}^{n \times N}$ , labels $Y \in \mathbb{R}^N, y^{(i)} \in \{-1,1\}$ 
 > SOLVE: parameters $w \in \mathbb{R}^{n}, b$ such that $\min_{w,b} \frac{1}{2} w^T w$ subject to  $y^{(i)} (w^Tx^{(i)} + b) \geq 1$ for $i \in [1, N]$ 
-> ***Iterative Solution***: Multiple in existance  
+> ***Iterative Solution***: [[Pegasos Algorithm]], [[Sequential Minimal Optimization]]
 
 Support vector machine (SVM) is the algorithm that search for the optimal boarder between the given classes. 
 
-![[Svm_max_sep_hyperplane_with_margin.png]]
+![[SVM.png]]
 For linearly divisible binary classification problems, we can consider the optimal linear classifier to be the one that separates the two classes and to the hyperspace with the largest minimum interval of all samples plane.
 
 ## Margins
@@ -41,7 +41,7 @@ And the geometric margin of the training set is still:
 $$\gamma = \min _{i,...,n} \gamma^{(i)}$$
 ## The Optimal Margin Problem
 
-Since we are looking for the maximum geometric margin, we have the [[optimization problem]]:
+Since we are looking for the maximum geometric margin, we have the [[Optimization Problem]]:
 $$\max_{\gamma,w,b} \gamma \quad s.t. \quad y^{(i)}(w^Tx^{(i)} + b) \geq \gamma, i=1,...,N \quad ||w|| = 1$$
 - $||w||=1$ is the constraint such that the functional margin would be as close a geometric margin
 
@@ -55,6 +55,8 @@ Note: due to the [[Karush–Kuhn–Tucker Conditions]] (The dual and complementa
 
 Note: the traning samples on the $\hat{\gamma} = 1$ line (dashed line in the graph) are the only points define the decision boundry, they are called **Support Vectors**.
 
+Note: in the entire Lagrangian function, only the support vectors can have non-zero $\alpha$ , since they satisfy the KKT conditions and have possible KKT multipliers.
+
 ![[SVMOptimizer.png]]
 
 To solve the optimal weights, we derive the Lagrangian form with KKT multipliers:
@@ -67,5 +69,9 @@ And if we looks at b, we get
 $$\dfrac{\partial \mathcal{L}}{\partial b} = \sum _{i=1} ^N \alpha_iy^{(i)} = 0$$
  If we replace the definition of $w$ into the primal problem, $b$ as the constraint, and set the Lagrangian as the new objective function, we have the dual problem:
  $$\max_\alpha \sum_{i=1} ^N \alpha_i -  \frac{1}{2} \sum _{i,j=1} ^N y^{(i)} y^{(j)} \alpha_i \alpha_j <x^{(i)}, x^{(j)}> \quad s.t. \quad \alpha_i\geq0, \sum _{i=1} ^N \alpha_iy^{(i)} = 0 $$
+Because the  support vectors  satisfy $w^Tx^{(i)} + b = \pm 1$. We have   $\max_{i:y^{(i)}=-1}(w^{*})^Tx^{(i)} + b= -1$    and $\min_{i:y^{(i)}=1}(w^*)^Tx^{(i)} + b = 1$. By combining the functions, the optimal intercept term $b^*$ can be found as a function of optimal $w^*$:
+$$b^*=-\frac{\max_{i:y^{(i)}=-1}(w^{*})^Tx^{(i)}+\min_{i:y^{(i)}=1}(w^*)^Tx^{(i)}}{2}$$
 
+  Bu using the support vectors and definition of weights, we can directly using $\alpha$ terms for support vectors to preform prediction, as:
+  $$w^Tx + b = \sum _{i=1} ^N \alpha_iy^{(i)}<x^{(i)},x> + b$$
   

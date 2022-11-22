@@ -14,6 +14,6 @@ In the vector notation, we have:
 $$\min _{\beta_0, \beta} || y - \beta_0 - X\beta||_2^2 \quad s.t.\quad ||\beta_j||_1 \leq t$$
 $\beta_0$ can be solved independently to be $\hat{\beta_0} = \bar{y} - \bar{x}^T\beta$ , with the problem being:
 $$\min _{ \beta} || y - X\beta||_2^2 \quad s.t.\quad -||\beta_j||_1 \geq -t$$
-We can apply a [[lagrange multiplier]] to the restraint, and form the lagrangian form:
+We can apply a [[Lagrange Multiplier]] to the restraint, and form the lagrangian form:
 $$\min _{ \beta} || y - X\beta||_2^2 - \lambda||\beta||$$
 This form of problem is also referred as [[L1 Regularization]]

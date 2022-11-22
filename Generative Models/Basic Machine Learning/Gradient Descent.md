@@ -11,5 +11,5 @@ The rule of parameter update:
 $$\theta_j := \theta_j - \alpha \dfrac{\partial}{\partial \theta_j} J(\theta)$$
 - $\alpha$ is the learning rate, it controls the step size to prevent gradient explosion
 
-
+If we update the parameters once per sample, the algorithm is called Stochastic Gradient Descent or SGD
 

@@ -16,9 +16,9 @@ $$J(\theta)-||\alpha I\theta||_2 ^2$$
 
 From the [[Regularization]] note, we have the current [[Maximum Likelihood Estimation]] being:
 $$\mathcal{l}(\theta) = \sum _{i=1} ^N log(p(y^{(i)}|x^{(i)};\theta)) + log(f(\theta))$$
-And in this form we assume $f(\theta)$ is a [[gaussian distribution]], this will turn our optimization target to be (proof is the same as the original LMS algorithm):
+And in this form we assume $f(\theta)$ is a [[Gaussian Distribution]], this will turn our optimization target to be (proof is the same as the original LMS algorithm):
 $$\mathcal{l}(\theta) = \sum _{i=1} ^N log(p(y^{(i)}|x^{(i)};\theta) ) - \frac{1}{2\sigma^2}||\theta||^2$$
-If we replace the first term with the linear regression [[likelihood]]:
+If we replace the first term with the linear regression [[Likelihood]]:
 $$- \frac{1}{2\sigma_0^2} \sum _{i=1} ^N (y^{(i)} - \theta^Tx^{(i)})^2- \frac{1}{2 \sigma^2}||\theta||^2$$
 And by switching to argmin with vector notations, we will have: 
 $$argmin_\theta \,||X\theta-y||_2^2 + ||\theta||_2^2$$

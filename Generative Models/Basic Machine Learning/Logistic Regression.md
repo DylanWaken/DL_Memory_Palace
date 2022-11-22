@@ -21,9 +21,9 @@ $P(y = 0|x;\theta) = 1 - h_\theta(x)$
 
 And by combining the functions we have:
 $$p(y|x;\theta) = (h_\theta(x))^y(1-h_\theta(x))^{1-y}$$
-And we have the [[likelihood]] function as:
+And we have the [[Likelihood]] function as:
 $$\mathcal{L}(\theta) = \prod _{i=1}^N (h_\theta(x^{(i)}))^{y^{(i)}} (1-h_\theta(x^{(i)}))^{1-y^{(i)}}$$
-For the [[maximum likelihood estimation]], we use the log [[likelihood]] as:
+For the [[Maximum Likelihood Estimation]], we use the log [[Likelihood]] as:
 $$\mathcal{l}(\theta) = \sum _{i=1} ^N y^{(i)} \log h(x^{(i)}) + (1-y^{(i)})\log(1-h(x^{(i)}))$$
 and this log likehood is our optimization target.
 
@@ -37,5 +37,5 @@ $= (y(1-\sigma(\theta^T x)) - (1-y)\sigma(\theta^T x)) x_j$
 
 $= (y-h_\theta(x))x_j$
 
-And with the maximizing term defined we can use gradient descent (or ascent in this case) to approach our optimization target:
+And with the maximizing term defined we can use [[gradient descent]] (or ascent in this case) to approach our optimization target:
 $$\theta_{t+1} = \theta_t + \alpha(y^{(i)} - h_\theta(x^{(i)}))x^{(i)}$$
