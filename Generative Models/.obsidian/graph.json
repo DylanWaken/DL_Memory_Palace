@@ -48,18 +48,25 @@
         "a": 1,
         "rgb": 5419488
       }
+    },
+    {
+      "query": "tag:#StatisticalMechanics",
+      "color": {
+        "a": 1,
+        "rgb": 5431485
+      }
     }
   ],
   "collapse-display": false,
   "showArrow": true,
   "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 0.7125,
+  "nodeSizeMultiplier": 0.779742993018314,
   "lineSizeMultiplier": 3.06041666666667,
   "collapse-forces": false,
   "centerStrength": 0.322916666666667,
   "repelStrength": 6.14583333333333,
   "linkStrength": 0.510416666666667,
   "linkDistance": 54,
-  "scale": 0.7891665516077331,
+  "scale": 2.374543215876156,
   "close": true
 }

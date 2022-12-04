@@ -23,5 +23,5 @@ $Var[a * f(x)] = a^2 * Var[f(x)]$
 
 For continuous random variables:
 
-$$Var[X] = \int _{- \infty} ^{\infty} x^2 f_X(x) dx - (\int _{- \infty} ^{\infty} x^2 f_X(x) dx)^2$$
+$$Var[X] = \int _{- \infty} ^{\infty} x^2 f_X(x) dx - (\int _{- \infty} ^{\infty} x f_X(x) dx)^2$$
 

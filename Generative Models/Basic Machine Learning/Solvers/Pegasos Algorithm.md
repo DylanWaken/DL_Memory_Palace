@@ -8,7 +8,7 @@
 > $b_{t+1} := (1-\frac{1}{t})w_t  + \eta_t\mathbb{1}\{y^{(i)}(w^Tx+b) < 1\} y^{(i)}$
 
 Original Paper: [[PegasosMPB SVM Solving Algorithm.pdf]]
-This is a solution to the [[Support Vector Machines]]
+This is a solution to the [[Support Vector Machines (SVM)]]
 
 In the origial SVM problem, we have the primal objective defined as:
 $$\min _{w,b} \frac{1}{2} ||w||^2 \quad s.t. \quad y^{(i)}(w^Tx^{(i)} + b) \geq 1 $$

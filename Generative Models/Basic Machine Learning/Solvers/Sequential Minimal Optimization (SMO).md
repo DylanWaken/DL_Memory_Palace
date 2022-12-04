@@ -1,7 +1,7 @@
 -----
 #BasicMachineLearning 
 
-Sequential Minimal Optimization (SMO) is the [[Support Vector Machines]] solver using the [[Coordinate Descent]] process.
+Sequential Minimal Optimization (SMO) is the [[Support Vector Machines (SVM)]] solver using the [[Coordinate Descent]] process.
 
 In the original [[Soft-Margin SVM]], we have the dual optimization problem being:
 $$\max _\alpha \sum_{i=1} ^N \alpha_i -  \frac{1}{2} \sum _{i,j=1} ^N y^{(i)} y^{(j)} \alpha_i \alpha_j <x^{(i)}, x^{(j)}> \quad s.t. \quad 0\leq\alpha\leq C, \sum_{i=1} ^N \alpha_iy^{(i)}=0$$
@@ -43,7 +43,7 @@ $\quad\quad\quad\quad +  2 \cdot \sum _{j=3} ^N y^{(2)} y^{(j)}\alpha_2 \alpha_j
 $\quad\quad\quad\quad - \alpha_1 - \alpha_2 - \sum _{i=3} ^N \alpha_i$
 
 
-Here we define the inner product $<x^{(i)}, x^{(j)}>$ to be the linear kernel matrix $K_{ij}$ 
+Here we define the inner product $<x^{(i)}, x^{(j)}>$ to be the linear [[kernel]] matrix $K_{ij}$ 
 And we remove the constant terms $\sum _{i,j=3} ^N  y^{(i)} y^{(j)} \alpha_i \alpha_j <x^{(i)}, x^{(j)}>$  and $- \sum _{i=3} ^N \alpha_i$
 Note that $y^{(i)} \cdot y^{(i)} = 1$ , since $1^2 = (-1)^2 = 1$
 

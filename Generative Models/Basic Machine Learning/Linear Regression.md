@@ -19,7 +19,7 @@ $$argmin_\theta ||(X\theta - y)||^2$$
 We assign each input feature $x_i$ a weight parameter of $\theta_i$ . we also assign the zero-th input feature entry $x_0 = 1$ to have $\theta_0$ to work as the intercept term. The hypothesis function looks like this:
 
 $$h(x) = \sum_{i=0}^n \theta_i x_i = \theta^T x$$
-And in order to have the hypothesis funciton approaching the desired function, we define a cost function using the [[least mean squares]] (LMS) algorithm, as:
+And in order to have the hypothesis funciton approaching the desired function, we define a cost function using the [[Least Mean Squares (LMS)]] (LMS) algorithm, as:
 
 $$J(\theta) = \frac{1}{2} \sum _{i=1}^N || \theta^T x^{(i)} - y^{(i)} ||^2$$
 
@@ -57,7 +57,7 @@ $$argmin_\theta \frac{1}{2} \sum _{i=1} ^N (y^{(i)} - \theta^Tx^{(i)})^2$$
 
 Solution:
 ----
- The original LMS algorithm is an iterative solution process that uses [[gradient descent]] to approach the optimal parameters. 
+ The original LMS algorithm is an iterative solution process that uses [[Gradient Descent]] to approach the optimal parameters. 
  
   Since this is a quadratic function, the convex optimizing techniques can be implemented. we can use the normal equation to directly solve the optimal state. We first convert J($\theta$) to a vector form (given that for vecter z we have $z^Tz = \sum _{i}z_{i}^2$):
 

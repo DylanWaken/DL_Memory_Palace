@@ -1,10 +1,12 @@
 ------
 #BasicMachineLearning 
-> ***Problem Type***: [[Dimension Reduction]]
+> ***Problem Type***: [[Embedding]]
 > ***Solution Type***:  Closed-form Solution
 > *GIVEN:* input featurs $X \in \mathbb{R}^{n \times N}$  
 > SOLVE: orthnormal basis $u_1,u_2,...,u_k$ such that the variance of the projected data is maximized : for each $u_i$ : $\max_{u_i}J_j = \frac{1}{N} \sum_{i=1} ^N (x_i^T u_j -\mu_x^Tu_j)^2$
 > ***Closed-form Solution***: $u_i \in U$ from $svd(X)$  with maximum eigenvalues from $\Sigma^2$ of the $\Sigma$ in $svd(X)$ 
+
+Experiment in 
 
 The objective of PCA algorithm is to descover a new set of $k$ dimensional orthnormal [[Basis]] $\{u_1, u_2,....,u_k\}$($k<n$), such that the projection of the $n$ dimensional data onto it would have the maximum distance between individual data points.
 
@@ -42,6 +44,7 @@ $$svd(X) = U\Sigma V^T \quad ed(XX^T) = U \Sigma^2U^{-1}$$
 With the new set of orthnormal basis being:
 $${u_1,u_2,...,u_k} \in col(U)$$
 - The eigenvectors corresponding to the series of largest eigenvalues
+- The relative variance representation can be calculated by summing the eigenvalues
 
 And the eigenvalues are the diagnol of $\Sigma^2$ 
 
@@ -52,3 +55,4 @@ $$X_{new} ^{k \times N} = \begin{bmatrix} u_1^T \\ u_2^T \\ ..\\ u_k^T\end{bmatr
 Normally when we use PCA to downscale $n$ dimensional data to $k$ dimensions, and the minimum $k$ we can choose from is dependent on the ratio of projected variance to source variance, as:
 $$\frac{Var_{X_{new}}}{Var_{X}} \geq q$$
 - by practice, we choose $q = 0.99$
+

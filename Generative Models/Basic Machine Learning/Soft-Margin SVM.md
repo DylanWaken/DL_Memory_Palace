@@ -4,9 +4,9 @@
 > ***Solution Type***:  Iterative Solution
 > *GIVEN:* input featurs $X \in \mathbb{R}^{n \times N}$ , labels $Y \in \mathbb{R}^N, y^{(i)} \in \{-1,1\}$ 
 > SOLVE: parameters $w \in \mathbb{R}^{n}, b$ such that $\min_{w,b} \frac{1}{2} w^T w + C\sum _{i=1} ^N \xi_i$ subject to  $y^{(i)} (w^Tx^{(i)} + b) \geq 1 - \xi$ for $\xi_i \geq 0$ and $i \in {1,..., N}$ 
-> ***Iterative Solution***: [[Pegasos Algorithm]], [[Sequential Minimal Optimization]]
+> ***Iterative Solution***: [[Pegasos Algorithm]], [[Sequential Minimal Optimization (SMO)]]
 
-- [[Support Vector Machines]]
+- [[Support Vector Machines (SVM)]]
 
 In the non-linear separable binary classification problems, the algorithm solves for the hyperplane with the maximized minimal margin, but allows sample points to exist within the minimal margins of train set. 
 

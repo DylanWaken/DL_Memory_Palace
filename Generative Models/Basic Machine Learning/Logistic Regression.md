@@ -37,5 +37,5 @@ $= (y(1-\sigma(\theta^T x)) - (1-y)\sigma(\theta^T x)) x_j$
 
 $= (y-h_\theta(x))x_j$
 
-And with the maximizing term defined we can use [[gradient descent]] (or ascent in this case) to approach our optimization target:
+And with the maximizing term defined we can use [[Gradient Descent]] (or ascent in this case) to approach our optimization target:
 $$\theta_{t+1} = \theta_t + \alpha(y^{(i)} - h_\theta(x^{(i)}))x^{(i)}$$

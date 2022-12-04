@@ -1,7 +1,7 @@
 ----
 #BasicMachineLearning 
 
-The specifal form of [[Tikhonov Regularization]] that prefered the smaller norms for the weights or parameters vector. The name L2 Regularization from the L2 Norm used in the regularization term.
+The specifal form of [[Tikhonov regularization]] that prefered the smaller norms for the weights or parameters vector. The name L2 Regularization from the L2 Norm used in the regularization term.
 
 The original TR function:
 $$||X\theta-y||_2^2 + ||\Gamma \theta||_2^2$$

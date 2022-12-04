@@ -21,7 +21,7 @@ In the linear regression interative solution, well will swap $x$ for $\phi(x)$ a
 
 ## Kernel Method
 
-Here the [[Least Mean Squares]] is used:
+Here the [[Least Mean Squares (LMS)]] is used:
 
 In an iterative linear regression problem, if we initialize $\theta$ to be zero, and with $N$ training samples, we can represent $\theta$ as the linear combination of all the feature maps $\phi(x)$ , as:
 $$\theta = \sum _{i=1}^N\beta_i \phi(x^{(i)})$$
@@ -41,6 +41,8 @@ And our prediction will be :
 $$\forall i\in [1,n], \beta_i:=\beta_i + \alpha(y^{(i)} -\sum_{j=1}^N\beta_jK(x^{(i)},x^{(j)}))$$
 SInce K will iterate all $i$ and $j$, $K \in \mathbb{R}^{N \times N}$, And in vector notation:
 $$\beta := \beta + \alpha(\vec{y} - K\beta)$$
+Note: The kernel matrix is a [[Gram Matrix]]
+
 ## Kernel Properties
 
 In our definition, kernels themselves would include the mapping of features in its definition.  

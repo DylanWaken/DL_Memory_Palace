@@ -28,6 +28,11 @@ If we assume that all data $y$ is independent from each others, we can use the r
 $$\mathcal{L}(\theta; y) = p(\vec{y}; \theta) = \prod_{i=1}^n p(y^{(i)};\theta)$$ 
 For an easier understanding, we are just throwing all the data into the distribution or model and check the result. If the desity of the data matches the distribution, then we will achieve the maximum likelihood distribution on the observed data. 
 
+Likelihood is the joint density of data.
+
+In a more precise explanation, we have:
+$$L(\theta) = L(\theta|y) = p(y;\theta)$$
+
 ### log likelihood
 
 In practice, since the product over all the model outputs on the data is both hard to operate and computationally inefficient, we normally replace the likelihood function with the log likelihood function, which is:

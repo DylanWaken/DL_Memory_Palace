@@ -10,7 +10,7 @@ $$J(\theta) = \frac{1}{2} || X\theta - \vec{y} ||^2$$
 - $J(\theta)$ is the loss function with $\theta \in \mathbb{R}^n$ as parameters
 - input featurs $X \in \mathbb{R}^{n \times N}$ , labels $\vec{y} \in \mathbb{R}^N$  
  
-The solution to the problem is a iterative process using [[gradient descent]]:
+The solution to the problem is a iterative process using [[Gradient Descent]]:
 $$\theta_{t+1} = \theta_{t} -\alpha (\theta^Tx^{(i)}-y^{(i)})x^{(i)}$$
 and to iteratie through the entire dataset at once, which is normally called Batch [[Gradient Descent]]:
 $$\theta_{t+1} = \theta_{t} -\alpha \sum _{i=1}^N(\theta^Tx^{(i)}-y^{(i)})x^{(i)}$$

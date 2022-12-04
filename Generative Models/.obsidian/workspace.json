@@ -4,75 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "7fc83fc26cdfa515",
+        "id": "0a353a8a90468dbc",
         "type": "tabs",
         "children": [
           {
-            "id": "c07785f9908183ae",
+            "id": "931bbcb5a544e84a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prerequisite Knowledge/Basic Optimization Theory/Lagrange Multiplier.md",
+                "file": "Prerequisite Knowledge/Statistical Mechanics/Carnot Theorem.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f9a332e981e75518",
+            "id": "4f3f29b3ca4c8bdd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prerequisite Knowledge/Linear Algebra/Singular Value Decomposition.md",
+                "file": "Prerequisite Knowledge/Statistical Mechanics/Entropy.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3b38a91e5d495cdb",
+            "id": "80a3019fa8e06073",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prerequisite Knowledge/Linear Algebra/Singular Value Decomposition.md",
+                "file": "Prerequisite Knowledge/Statistical Mechanics/Generalised Partition Function.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "981761839854666b",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "3ce4f2cfa1a6cdb6",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "0ee7d1baeacde580",
+            "id": "0b1e0e76d6b4606d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basic Machine Learning/Principal Component Analysis.md",
+                "file": "Prerequisite Knowledge/Statistical Mechanics/Generalised Partition Function.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -101,10 +85,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#BasicMachineLearning",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -122,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.5
+    "width": 304.5
   },
   "right": {
     "id": "76f1d880c57f7c81",
@@ -138,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basic Machine Learning/Principal Component Analysis.md",
+                "file": "Prerequisite Knowledge/Statistical Mechanics/Generalised Partition Function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basic Machine Learning/Principal Component Analysis.md"
+                "file": "Prerequisite Knowledge/Statistical Mechanics/Generalised Partition Function.md"
               }
             }
           },
@@ -176,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basic Machine Learning/Principal Component Analysis.md",
+                "file": "Prerequisite Knowledge/Statistical Mechanics/Generalised Partition Function.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,19 +170,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200.5
   },
-  "active": "0ee7d1baeacde580",
+  "active": "0b1e0e76d6b4606d",
   "lastOpenFiles": [
-    "Basic Machine Learning/Linear Regression.md",
-    "Basic Machine Learning/Soft-Margin SVM.md",
-    "Basic Machine Learning/Principal Component Analysis.md",
-    "Prerequisite Knowledge/Linear Algebra/Singular Value Decomposition.md",
-    "Prerequisite Knowledge/Linear Algebra/Orthnormal Matrix.md",
-    "Prerequisite Knowledge/Linear Algebra/Orthogonal.md",
-    "Basic Machine Learning/Sequential Minimal Optimization.md",
-    "Basic Machine Learning/Support Vector Machines.md",
-    "Prerequisite Knowledge/Linear Algebra/Singular Value.md",
-    "Prerequisite Knowledge/Linear Algebra/Conjugate Transpose.md"
+    "Prerequisite Knowledge/Statistical Mechanics/Principle of Equal and Priori Probabilities.md",
+    "Prerequisite Knowledge/Statistical Mechanics/Generalised Partition Function.md",
+    "Prerequisite Knowledge/Statistical Mechanics/Microstate.md",
+    "Prerequisite Knowledge/Statistical Mechanics/The Second Law of Thermodynamics.md",
+    "Prerequisite Knowledge/Statistical Mechanics/Clausius Inequality.md",
+    "Prerequisite Knowledge/Statistical Mechanics/The First Law of Thermodynamics.md",
+    "Prerequisite Knowledge/Statistical Mechanics/Gibbs Entropy.md",
+    "Prerequisite Knowledge/Statistical Mechanics/Entropy.md",
+    "Prerequisite Knowledge/Statistical Mechanics/Temperature.md",
+    "Prerequisite Knowledge/Statistical Mechanics/Boltzmann Entropy.md"
   ]
 }
