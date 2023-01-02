@@ -2,10 +2,13 @@
 #StatisticalMechanics 
 
 Gibbs Entropy is a special definition came from information theory. 
+the definition for Gibbs entropy is:
+$$S_G = -k_B \sum P_i \log P_i$$
+- $P_i$ is the probability of every batch of indistinguishable microstate (or generally speaking the probability of the $i$ th random event)
 
 From [[Boltzmann Entropy]], we have the entropy for the system defined as:
 $$S = k_B\log\Omega$$
-However, not every state of $\Omega$ can be separated from each others from experiment measurements. 
+However, not every state of $\Omega$ can be separated from each others from experiment measurements. (for example: identical particles at the same energy level)
 
 Therefore we separate the [[Microstate]]s into $i$ batches each with $\Omega_i$ elements. Experiment measurements can tell whether the system is in one of the batches, but it cannot seperate individual states in the batches.
 

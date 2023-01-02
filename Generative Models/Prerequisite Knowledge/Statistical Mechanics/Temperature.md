@@ -1,11 +1,12 @@
 ----
 #StatisticalMechanics 
 
-Statistical mechanics defines temperature based on a system's fundamental degrees of freedom.
+Statistical mechanics defines temperature based on a system's fundamental degrees of freedom. Reciprocal temperature corresponds to the relative change in the number of microscopic states of a system with change in internal energy.
 
 Here we define temperature $T$ as:
 $$\frac{1}{k_BT} = \frac{d\log \Omega}{dE}$$
 - $k_B$ is the Boltzmann constant.
+- $\Omega$ is the total amount of microstates
 
 ## Proof:
 
@@ -31,3 +32,4 @@ Which is the same as:
 $$\frac{d \log \Omega_1}{dE_1} = \frac{d \log \Omega_2}{dE_2}$$
 Because the systems at heat equilibrium have the same temperature, we define temperature upon this funtion:
 $$\frac{1}{k_BT} = \frac{d\log \Omega}{dE}$$
+Another more intuitive proof can be found within [[Temperature.pdf]]

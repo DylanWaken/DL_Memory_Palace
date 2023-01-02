@@ -7,7 +7,7 @@
 > $\max_\theta\log L(\theta) = \sum _{i=1} ^N \log \int_z p(x^{(i)},z;\theta)dz$
 > ***Iterative Solution:*** 
 > initialize the parameters $\theta_0$ 
-> Estimation: $ELBO(\theta_{t+1}|\theta_t) = E_{z\sim p(x,z;\theta_t)}[\log p(x,z;\theta_t]$ 
+> Estimation: $ELBO(\theta_{t+1}|\theta_t) = E_{z\sim p(x,z;\theta_t)}[\log p(x,z;\theta_t)]$ 
 > Maximization: $\theta_{t+1}= \arg \max_{\theta} ELBO(\theta|\theta_t)$
 > Calculate $\log L(\theta_{t+1})$, and repeat the above two steps until convergence 
 
@@ -15,6 +15,8 @@ In many cases, there exists implicit variables that influnece the distribution o
 $$p(x) = \int_z p(x,z)dz$$
 However, if we can model the influence of implicit variables on our observed variables, or in the other words, we can ge the joint distribution of implicit variable and observed variable, and allowing the parameters within it to be unknown, as:
 $$p(x;\theta) = \int_z p(x,z;\theta)dx$$
+- Here, $p(x;\theta)$ is the [[Marginal Distribution]] of the $p(x,z;\theta)$
+
 And this is the objective for the Expectation Maximization (E-M) algorithm. The algorithm will be searching for the parameter set $\theta$ that maximize the log likelihood among all samples:
 $$\max_\theta\log L(\theta) = \sum _{i=1} ^N \log \int_z p(x^{(i)},z;\theta)dz$$
 The E-M approach based on the following conclusion:

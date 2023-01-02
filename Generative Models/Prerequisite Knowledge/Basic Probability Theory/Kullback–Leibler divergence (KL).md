@@ -1,7 +1,7 @@
 ----
 #ProbabilityTheory 
 
-For the discrete probabilistic distribution $P$ and $Q$ in the smae probabilistic space, the KL divergence of them is defined as:
+For the discrete probabilistic distribution $P$ and $Q$ in the same probabilistic space, the KL divergence of them is defined as:
 $$D_{KL}(P ||Q) = \sum _{x\in \Omega} P(x) \log(\frac{P(x)}{Q(x)})$$
 Which is equivalent to:
 $$D_{KL}(P ||Q) = -\sum _{x\in \Omega} P(x) \log(\frac{Q(x)}{P(x)})$$

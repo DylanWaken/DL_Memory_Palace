@@ -1,3 +1,4 @@
+----
 #ProbabilityTheory
 Assuming `B` is a non-zero probability, the ***conditional probability*** of any other event A given B is defined as:
 

@@ -18,7 +18,6 @@ Property as being cumulative density function:
 Getting probability value from CDF:
 
 5: $P(x_1 < X \leq x_2, y_1 < Y \leq y_2 ) = F_{X,Y}(x_2,y_2) - F _{X,Y} (x_1,y_2) - F_{X,Y}(x_2, y_1) + F_{X,Y}(x_1,y_1)$
-
 Calculating the joint CDF:
 
 if X and Y are independent, then
@@ -34,7 +33,7 @@ for independent random variables the joint PDF can be written as:
 $$f_{X,Y}(x,y) = f_X(x) f_Y(y)$$
 - Note: this will produce a 2 dimensional function
 
-Like in the original PDF definition, the probability of a specific point  is not ensured to be the value on the joint PDF, but the probability of an  $A$ can sill be represented using the function by:
+Like in the original PDF definition, the probability of a specific point  is not ensured to be the value on the joint PDF, but the probability of x in  $A$ can sill be represented using the function by:
 
 $$\iint_{x \in A} f_{X,Y}(x,y)dxdy = P(x \in A, y \in A)$$
 

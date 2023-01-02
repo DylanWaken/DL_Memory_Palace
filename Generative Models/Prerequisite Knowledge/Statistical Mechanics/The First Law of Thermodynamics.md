@@ -22,3 +22,7 @@ Where the change in the total internal energy is equal to the difference of chan
 
 If we introduce the definition of [[Entropy]], we can rewrite this function as:
 $$dU = TdS - PdV$$
+- $T$ is temperature, $P$ is pressure, $S$ is entropy, $V$ is volume
+
+for a more complete form with chemical potential and atom number, we have:
+$$dU = TdS - PdV + \mu dN$$

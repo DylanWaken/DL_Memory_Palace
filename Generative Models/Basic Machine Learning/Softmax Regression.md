@@ -55,9 +55,9 @@ T(c-1)=\begin{bmatrix}
 \end{bmatrix}
 $$
 
-Note: ${l\{y=1\}}$ produce 1 if y=1, else 0 
+Note: ${\mathbb{1}\{y=1\}}$ produce 1 if y=1, else 0 
 We can define the probability of $y$ given $\phi$ as:
-$$p(y;\phi) = \phi_1 ^{l\{y=1\}} \phi_2 ^{l\{y=2\}} ... \phi_c^{l\{y=c\}}$$
+$$p(y;\phi) = \phi_1 ^{\mathbb{1}\{y=1\}} \phi_2 ^{\mathbb{1}\{y=2\}} ... \phi_c^{\mathbb{1}\{y=c\}}$$
 Swap out the final term we have:
 $$p(y;\phi) = \phi_1 ^{(T(y))_1} \phi_2 ^{(T(y))_2} ... \phi_c^{1 - \sum _{i=1} ^{c-1} (T(y))_i}$$
 To get the general formula of exponential family, we take the exponents:
@@ -95,10 +95,10 @@ $$P(y=i|x;\theta) = \phi_i = \phi_i = \frac{ e^{\theta_i^Tx} }{\sum _{i=1} ^{c} 
 The optimization is also based on [[Maximum Likelihood Estimation]] with the log likelyhood being:
 
 $$\mathcal{l}(\theta) = \sum _{i=1} ^N \log(\prod _{j=1} ^c (\frac{ e^{\theta_j^Tx} }{\sum _{i=1} ^{c} e^{\theta_i^Tx}})^{l{\{y^{(i)}=j\}}})$$
-- The cumulative product produce only one probability since all $l\{y^{(i)} \neq l\}$ will be zeros and make other terms 1
+- The cumulative product produce only one probability since all $\mathbb{1}\{y^{(i)} \neq l\}$ will be zeros and make other terms 1
 
 From this, we can derive the iterative solution as:
-$$\mathcal{l}(\theta) = \sum _{i=1} ^N \sum _{j=1} ^c l\{y^{(i)}=j\} \log(\frac{ e^{\theta_j^Tx} }{\sum _{i=1} ^{c} e^{\theta_i^Tx}}) $$
+$$\mathcal{l}(\theta) = \sum _{i=1} ^N \sum _{j=1} ^c \mathbb{1}\{y^{(i)}=j\} \log(\frac{ e^{\theta_j^Tx} }{\sum _{i=1} ^{c} e^{\theta_i^Tx}}) $$
 If we turn $y$ into the one hot matrix versions, we will have:
 $$\mathcal{l}(\theta) =  \sum _{i=1} ^N \sum _{j=1} ^c y_{ji} \log(\frac{ e^{\theta_j^Tx} }{\sum _{i=1} ^{c} e^{\theta_i^Tx}})$$
 Where we can rewrite in the form of:
@@ -114,4 +114,4 @@ Which can be simplified as:
 $$\nabla _{\theta_k} f_k(x^{(i)}) = f_k(x^{(i)})(1-f_k(x^{(i)})) x^{(i)}$$
 And our iterative solution is:
 $$\theta_k := \theta_k + \alpha \sum _{i=1} ^N y_{ki} (1-f_k(x^{(i)})) x^{(i)}$$
-
+There is another explanation of this algorithm from statistical mechanics, as [[Generalised Partition Function]]
