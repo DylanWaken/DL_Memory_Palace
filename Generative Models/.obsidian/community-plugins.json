@@ -2,5 +2,8 @@
   "obsidian-style-settings",
   "obsidian-extract-pdf-highlights",
   "obsidian-annotator",
-  "better-pdf-plugin"
+  "better-pdf-plugin",
+  "obsidian-latex-suite",
+  "obsidian-zotero-desktop-connector",
+  "obsidian-citation-plugin"
 ]

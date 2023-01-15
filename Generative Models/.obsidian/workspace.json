@@ -8,26 +8,39 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1d354ac2637e443e",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
             "id": "d2883246210ba610",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prerequisite Knowledge/Basic Probability Theory/Markov Random Fields (MRF).md",
+                "file": "Deep Learning/Sigmoid Belief Networks (SBN).md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "555bd7b83694909b",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Deep Learning/Papers/rnn1990.pdf"
+              }
+            }
+          },
+          {
+            "id": "a2ce7af4c74665f3",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Machine_Learning_Algorithm_Note-V2.0.pdf"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -56,8 +69,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#BasicMachineLearning",
-                "matchingCase": false,
+                "query": "h",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
                 "extraContext": false,
@@ -77,8 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 304.5,
-    "collapsed": true
+    "width": 285.5
   },
   "right": {
     "id": "76f1d880c57f7c81",
@@ -94,6 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Deep Learning/Papers/rnn1990.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Deep Learning/Papers/rnn1990.pdf"
+              }
             }
           },
           {
@@ -129,6 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Deep Learning/Papers/rnn1990.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,17 +168,17 @@
       "obsidian-extract-pdf-highlights:PDF Highlights": false
     }
   },
-  "active": "1d354ac2637e443e",
+  "active": "555bd7b83694909b",
   "lastOpenFiles": [
-    "Prerequisite Knowledge/Statistical Mechanics/Microstate.md",
-    "Prerequisite Knowledge/Statistical Mechanics/Principle of Maximum Entropy.md",
-    "Prerequisite Knowledge/Basic Probability Theory/Likelihood.md",
-    "Prerequisite Knowledge/Basic Probability Theory/Kullback–Leibler divergence (KL).md",
-    "Prerequisite Knowledge/Basic Probability Theory/Joint Distribution.md",
-    "Prerequisite Knowledge/Basic Probability Theory/Gaussian Distribution.md",
-    "Basic Machine Learning/Support Vector Machines (SVM).md",
-    "Basic Machine Learning/Solvers/Radical Basis Function (RBF).md",
-    "Prerequisite Knowledge/Statistical Mechanics/Entropy.md",
-    "Prerequisite Knowledge/Statistical Mechanics/Boltzmann Entropy.md"
+    "Deep Learning/Papers/Hinton - Learning of Boltzmann Machines.pdf",
+    "Deep Learning/Wake-Sleep Algorithm.md",
+    "Deep Learning/Sigmoid Belief Networks (SBN).md",
+    "Machine_Learning_Algorithm_Note-V2.0.pdf",
+    "Deep Learning/Assets/Screenshot from 2023-01-09 19-22-06.png",
+    "Deep Learning/Boltzmann Machines.md",
+    "Deep Learning/Papers/Koeln - Helmholtz Machine Explained.pdf",
+    "Basic Machine Learning/Linear Regression.md",
+    "Deep Learning/Papers/Hinton - The Wake-Sleep Algorithm for unsupervised learning.pdf",
+    "Deep Learning/Deep Belief Networks (DBN).md"
   ]
 }
