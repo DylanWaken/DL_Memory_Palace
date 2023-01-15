@@ -11,7 +11,9 @@ git clone https://github.com/DylanWaken/DL_Memory_Palace.git
 2: Install the Obsidian Application: https://obsidian.md/
 
 3: Open the cloned directory as an obsidian vault.
-
+```
+Open: ${YOUR_PATH}/GenerativeModels/ as obsidian vault
+```
 ## \>How to contribute?
 If these knowledge helped you in the process of learning and you are welling to contribute, you can do so by following the note templates in the repository and push into a new branch. I would constantly review updates and merge them into the main project. 
 
