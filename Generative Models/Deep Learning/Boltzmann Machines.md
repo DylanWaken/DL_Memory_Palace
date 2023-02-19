@@ -31,7 +31,7 @@ Where $T$ is the temperature property of the system. We normally merge the term 
 
 Note here, when $\Delta E$ is 0, the chance for the unit on both state ($s_{i} = 1, s_{i}=0$) is equal. However, if $\Delta E < 0$ (which means the system energy is greater when the unit is turned off), the probability of turning on would be greater $p_{i=1} > 0.5$ 
 
-And therefore, because of the [[Boltzmann Distribution]], the entire system would be tending toward minimum energy. When the network can no longer reduce its energy, it is said to be at thermal equilibrium with maximum entropy.
+And therefore, because of the [[Boltzmann Distribution]], the entire system would be tending toward minimum energy. When the network can no longer reduce its energy, it is said to be at thermal equilibrium wit175 Billion ;h maximum entropy.
 
 ## Learning algorithm for Boltzmann Machines
 
