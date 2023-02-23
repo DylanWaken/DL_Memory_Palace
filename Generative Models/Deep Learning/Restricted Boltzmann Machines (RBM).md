@@ -78,6 +78,8 @@ After the hidden units are sampled, we reconstruct the data using the hidden uni
 $$v_{t+1} \sim p(v|h_{t})$$
 According to the assumptions in contrastive divergence, the repeating of this process would converge the visible units toward the model's equilibrium. 
 
+What really interesting about this pattern is that, given enought steps in the alternative Markov Chain, the states of both visible and hidden units actually modeled the joint distribution of the model, as $P(v,h)$
+
 After taking $n$ steps forward, we can utilize our update rule to figure out the gradients for the weigths and biases as:
 $$\begin{align}
 &\frac{{\partial \log P(v)}}{\partial w_{ij}} = P(h_{i}=1|v^{(0)})v_{j}^{(0)} - P(h_{i}=1|v^{(n)})v_{j}^{(n)} \\

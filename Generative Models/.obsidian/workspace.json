@@ -13,26 +13,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Deep Learning/Variational Bayes.md",
+                "file": "Deep Learning/Deep Belief Networks (DBN).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e28016c0dc066885",
+            "id": "c3a0bce258bb3c80",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Deep Learning/Restricted Boltzmann Machines (RBM).md",
+                "file": "Deep Learning/Self Attention AutoEncoder (Transformers).md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "6b6d9877c82ceaa1",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Machine_Learning_Algorithm_Note-V2.0.pdf"
+              }
+            }
+          },
+          {
+            "id": "db5c2aa0187dda49",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Deep Learning/Restricted Boltzmann Machines (RBM).md",
+                "file": "Deep Learning/Deep Belief Networks (DBN).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Deep Learning/Restricted Boltzmann Machines (RBM).md"
+                "file": "Deep Learning/Deep Belief Networks (DBN).md"
               }
             }
           },
@@ -136,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Deep Learning/Restricted Boltzmann Machines (RBM).md",
+                "file": "Deep Learning/Deep Belief Networks (DBN).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,17 +177,17 @@
       "obsidian-extract-pdf-highlights:PDF Highlights": false
     }
   },
-  "active": "e28016c0dc066885",
+  "active": "7d55278ff1c37234",
   "lastOpenFiles": [
-    "Deep Learning/Boltzmann Machines.md",
-    "Deep Learning/Variational Bayes.md",
-    "Prerequisite Knowledge/Statistical Mechanics/Microstate.md",
-    "Prerequisite Knowledge/Basic Probability Theory/Maximum Likelihood Estimation.md",
     "Deep Learning/Restricted Boltzmann Machines (RBM).md",
     "Deep Learning/Deep Belief Networks (DBN).md",
+    "Deep Learning/Wake-Sleep Algorithm.md",
+    "Deep Learning/Self Attention AutoEncoder (Transformers).md",
+    "Machine_Learning_Algorithm_Note-V2.0.pdf",
+    "Deep Learning/Variational Bayes.md",
     "Deep Learning/Sigmoid Belief Networks (SBN).md",
     "Deep Learning/Generative Adversarial Networks (GAN).md",
-    "Prerequisite Knowledge/Statistical Mechanics/Temperature.md",
-    "Prerequisite Knowledge/Statistical Mechanics/Ising Model Partition Function.md"
+    "Deep Learning/Boltzmann Machines.md",
+    "Deep Learning/Variational Autoencoder (VAE).md"
   ]
 }

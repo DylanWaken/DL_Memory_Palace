@@ -53,7 +53,7 @@ $$G = \sum_{\alpha} P(V _{\alpha})\log \frac{P(V_{\alpha})}{P'(V _{\alpha})} \qu
 To find an algorithm to update the weights, we are building the relation between the log probabilities for the microstate with respect to single connection weigths.
 
 When the network is free-running, the probability of the specific microstate for visible units is given as:
-$$P'(V_{\alpha})=\sum _{\beta}P'(V_{\alpha} \cap H_{\beta}) = \sum _{\beta} \frac{e^{-E_{\alpha \beta}/T}}{{Z}_{\lambda\mu}}\quad(Eq.3)$$
+$$P'(V_{\alpha})=\sum _{\beta}P'(V_{\alpha} , H_{\beta}) = \sum _{\beta} \frac{e^{-E_{\alpha \beta}/T}}{{Z}_{\lambda\mu}}\quad(Eq.3)$$
 - $\alpha$ stands for the arrangement of visible unit, and $\beta$ stands for all arrangement of hidden units. $E_{\alpha \beta}$ stands for the energy for configuration $\alpha \beta$  . Here we are looking at the [[Marginal Distribution]] of the visible state
 - $V_{\alpha}$ is the vector for visible unit states, and $H_{\beta}$ is the vector for hidden unit states
  - $Z_{\lambda\mu}$ is the partition function for system states for all visible hidden combinations, as:
@@ -65,13 +65,13 @@ $$\dfrac{\partial e^{-E_{\alpha \beta}/T}}{\partial w_{ij}} = \frac{1}{T} s^{(\a
 And hence:
 $$\dfrac{\partial P'(V_{\alpha})}{\partial w_{ij}} = \frac{\frac{1}{T}\sum _{\beta} s^{(\alpha \beta)}_{i} s^{(\alpha \beta)} _{j} e^{-E_{\alpha \beta}/T}}{\sum_{\alpha \beta}e^{-E_{\alpha \beta}/T}} - \frac{\sum_{\beta}e^{E_{\alpha \beta}/T} \frac{1}{T}\sum_{\lambda \mu}e^{E_{\lambda \mu}/T}s^{(\lambda \mu)}_{i}s^{(\lambda \mu)}_{j}}{(Z _{\lambda \mu})^2}$$
 Which can be simplified as:
-$$=\frac{1}{T}\left[ \sum_{\beta}P'(V_{\alpha} \cap H_{\beta}) s^{(\alpha \beta)}_{i} s^{(\alpha \beta)} _{j} - P'(V_{\alpha})\sum _{\lambda \mu} P'(V_{\lambda} \cap H_{\mu})s^{(\lambda \mu)} _{i } s^{(\lambda \mu)}_{j}\right]$$
+$$=\frac{1}{T}\left[ \sum_{\beta}P'(V_{\alpha} , H_{\beta}) s^{(\alpha \beta)}_{i} s^{(\alpha \beta)} _{j} - P'(V_{\alpha})\sum _{\lambda \mu} P'(V_{\lambda} , H_{\mu})s^{(\lambda \mu)} _{i } s^{(\lambda \mu)}_{j}\right]$$
 Given the loss defined in equation 2, we can find the gradient of the loss wrt weights by:
 $$\dfrac{\partial G}{\partial w_{ij}} = - \sum _{\alpha} \frac{{P(V_{\alpha})}}{P'(V_{\alpha})} \frac{{\partial P'(V_{\alpha})}}{\partial w_{ij}}$$
 Now we have by the [[Bayes Rule]]:
 $$\begin{align}
-&P(V_{\alpha} \cap H_{\beta}) = P(H_{\beta} | V_{\alpha}) P(V_{\alpha})
- \\ &P'(V_{\alpha} \cap H_{\beta}) = P'(H_{\beta} | V_{\alpha}) P'(V_{\alpha})
+&P(V_{\alpha} , H_{\beta}) = P(H_{\beta} | V_{\alpha}) P(V_{\alpha})
+ \\ &P'(V_{\alpha} , H_{\beta}) = P'(H_{\beta} | V_{\alpha}) P'(V_{\alpha})
 \end{align}$$
 Here one of the most important properties of Boltzmann machines came into play:
 
@@ -80,13 +80,13 @@ Here one of the most important properties of Boltzmann machines came into play:
 And therefore, the probability of a hidden state given some visible state must be the same in equilibrium whether the visible units were clamped in that state or arrived there by free-running:
 $$P(H_{\beta} | V_{\alpha}) = P'(H_{\beta} | V_{\alpha})$$
 Hence:
-$$P'(V_{\alpha} \cap H_{\beta}) \frac{P(V_{\alpha})}{P'(V_{\alpha})} = P(V_{\alpha} \cap H_{\beta}) \quad\sum _{\alpha} P(V_{\alpha})=1$$
+$$P'(V_{\alpha} , H_{\beta}) \frac{P(V_{\alpha})}{P'(V_{\alpha})} = P(V_{\alpha} , H_{\beta}) \quad\sum _{\alpha} P(V_{\alpha})=1$$
 And by this substitution, we would have the final update rule:
 $$\frac{{\partial G}}{\partial w_{ij}} = \frac{{1}}{T} [p_{{ij}} - p'_{ij}]$$
 where:
 $$\begin{align}
-&p_{ij} = \sum_{\alpha \beta} P(V_{\alpha} \cap H_{\beta}) s^{(\alpha \beta)}_{i} s^{(\alpha \beta)} _{j} \\
-&p'_{ij} = \sum _{\lambda \mu} P'(V_{\lambda} \cap H_{\mu})s^{(\lambda \mu)} _{i } s^{(\lambda \mu)}_{j}
+&p_{ij} = \sum_{\alpha \beta} P(V_{\alpha} , H_{\beta}) s^{(\alpha \beta)}_{i} s^{(\alpha \beta)} _{j} \\
+&p'_{ij} = \sum _{\lambda \mu} P'(V_{\lambda} , H_{\mu})s^{(\lambda \mu)} _{i } s^{(\lambda \mu)}_{j}
 \end{align}$$
 in a simpler manner, the value $p_{ij}$ is also the measure of the probability for the connection to turn on (with both units on). In the training process we would directly sample this from network.
 
