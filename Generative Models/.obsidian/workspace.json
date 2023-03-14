@@ -13,14 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Deep Learning/Deep Belief Networks (DBN).md",
+                "file": "Deep Learning/Variational Autoencoder (VAE).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c3a0bce258bb3c80",
+            "id": "73f7f0359433f614",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,12 +32,14 @@
             }
           },
           {
-            "id": "6b6d9877c82ceaa1",
+            "id": "a8f38bd7139e84ab",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Machine_Learning_Algorithm_Note-V2.0.pdf"
+                "file": "Basic Machine Learning/Softmax Regression.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -49,7 +51,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,7 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 285.5
+    "width": 286.5
   },
   "right": {
     "id": "76f1d880c57f7c81",
@@ -115,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Deep Learning/Deep Belief Networks (DBN).md",
+                "file": "Deep Learning/Self Attention AutoEncoder (Transformers).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Deep Learning/Deep Belief Networks (DBN).md"
+                "file": "Deep Learning/Self Attention AutoEncoder (Transformers).md"
               }
             }
           },
@@ -153,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Deep Learning/Deep Belief Networks (DBN).md",
+                "file": "Deep Learning/Self Attention AutoEncoder (Transformers).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,17 +180,27 @@
       "obsidian-extract-pdf-highlights:PDF Highlights": false
     }
   },
-  "active": "7d55278ff1c37234",
+  "active": "73f7f0359433f614",
   "lastOpenFiles": [
-    "Deep Learning/Restricted Boltzmann Machines (RBM).md",
-    "Deep Learning/Deep Belief Networks (DBN).md",
-    "Deep Learning/Wake-Sleep Algorithm.md",
+    "Prerequisite Knowledge/Statistical Mechanics/Generalised Partition Function.md",
     "Deep Learning/Self Attention AutoEncoder (Transformers).md",
-    "Machine_Learning_Algorithm_Note-V2.0.pdf",
+    "Basic Machine Learning/Generalized Linear Models.md",
+    "Basic Machine Learning/Softmax Regression.md",
+    "Deep Learning/Variational Autoencoder (VAE).md",
+    "Basic Machine Learning/Noise-Contrastive Estimation.md",
+    "Deep Learning/Beta Variational Autoencoder.md",
+    "Screenshot from 2023-03-12 20-59-02.png",
     "Deep Learning/Variational Bayes.md",
-    "Deep Learning/Sigmoid Belief Networks (SBN).md",
+    "Basic Machine Learning/Estimation Maximization (E-M algorithm).md",
+    "Deep Learning/Assets/Screenshot from 2023-03-12 20-29-42.png",
+    "Deep Learning/Assets/Pasted image 20230312202857.png",
+    "Prerequisite Knowledge/Basic Probability Theory/Variational Calculus.md",
     "Deep Learning/Generative Adversarial Networks (GAN).md",
     "Deep Learning/Boltzmann Machines.md",
-    "Deep Learning/Variational Autoencoder (VAE).md"
+    "Deep Learning/Deep Belief Networks (DBN).md",
+    "Deep Learning/Restricted Boltzmann Machines (RBM).md",
+    "Deep Learning/Wake-Sleep Algorithm.md",
+    "Machine_Learning_Algorithm_Note-V2.0.pdf",
+    "Deep Learning/Sigmoid Belief Networks (SBN).md"
   ]
 }

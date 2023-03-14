@@ -11,6 +11,8 @@
 > Maximization: $\theta_{t+1}= \arg \max_{\theta} ELBO(\theta|\theta_t)$
 > Calculate $\log L(\theta_{t+1})$, and repeat the above two steps until convergence 
 
+https://bjlkeng.github.io/posts/the-expectation-maximization-algorithm/
+
 In many cases, there exists implicit variables that influnece the distribution of data. The observed distribution $p(x)$ is the integral of the [[Joint Distribution]] between observed variable $x$ and other implicit variables $z$ :
 $$p(x) = \int_z p(x,z)dz$$
 However, if we can model the influence of implicit variables on our observed variables, or in the other words, we can ge the joint distribution of implicit variable and observed variable, and allowing the parameters within it to be unknown, as:
