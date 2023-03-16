@@ -130,3 +130,28 @@ The self attention autoencoder is designed for the sequence generation problems.
 $$X_{1:n} = \{ x_{1},\dots,x_{n} \}$$
 We are looking for a mapping to a sequence of output data:
 $$f:X_{1:n}\to Y_{1:k} $$
+#### Encoder
+
+The transformer encoder is a **self-attention** block that maps data to the same dimensions, as: $$f_{enc} : X_{1:n} \to X'_{i:n}$$
+The architecutre is shown below by stacking multiple residual multi-headed attention layers and residual FFN layers, which is normally called **The Bidirectional Encoder for Transformers - BERT** 
+
+(it is bidirectional because each data point in the sequence will be computed attention scores relative to all other data points in the sequence, there is no constraints on time steps). 
+
+![[Screenshot from 2023-03-15 14-36-06.png]]
+
+In the encoder below, only the self attention blocks are used.
+
+![[Deep Learning/Assets/Screenshot from 2023-03-15 14-34-49.png]]
+
+**The encoder will encode each data point with the network weighted intercorrelations with othre data points in the sequence, and store it back into the data point itself. Note: This is just a theory, the exact reason for why BERT works remains unknown.**
+
+#### Decoder
+
+The decoder part of this autoencoder involves a little bit more complexity
+
+Similar to RNN-based encoder-decoder models, the transformer-based encoder-decoder models define a conditional distribution of target vectors $Y_{1:k}$​ given an input sequence $X_{1:n}$. $$p_{\theta_{dec}}(Y_{1: k}|X_{1:n})$$
+And by the Bayes rule we can expand this as: $$p_{\theta_{dec}}(Y_{1: k}|X_{1:n}) = \prod _{i=1} ^k p_{\theta_{dec}}(y_{i }|Y_{i-1}, X_{1:n})$$
+Note: this formula says that the probability of a specific output at a time step is only conditionally dependent on the preceeding time steps, and the data points beyond this time step should not be involved in the prediction process. This is extremely important in the definnition of the decoder.
+
+To prevent the network from "using data points in the furture", the decoder attention block is designed to be **Uni-Directional**. Every data point $y_{i}$ in the generator self attention only have access to data points that came before it. $y_{1} ,\dots,y_{i-1}$ . 
+

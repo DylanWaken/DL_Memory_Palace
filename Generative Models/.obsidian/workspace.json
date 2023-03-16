@@ -176,17 +176,19 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "obsidian-extract-pdf-highlights:PDF Highlights": false
+      "command-palette:Open command palette": false
     }
   },
   "active": "73f7f0359433f614",
   "lastOpenFiles": [
-    "Prerequisite Knowledge/Statistical Mechanics/Generalised Partition Function.md",
+    "Deep Learning/Variational Autoencoder (VAE).md",
     "Deep Learning/Self Attention AutoEncoder (Transformers).md",
+    "Deep Learning/Assets/Screenshot from 2023-03-15 14-36-06.png",
+    "Deep Learning/Assets/Screenshot from 2023-03-15 14-34-49.png",
+    "Screenshot from 2023-03-15 14-34-49.png",
+    "Prerequisite Knowledge/Statistical Mechanics/Generalised Partition Function.md",
     "Basic Machine Learning/Generalized Linear Models.md",
     "Basic Machine Learning/Softmax Regression.md",
-    "Deep Learning/Variational Autoencoder (VAE).md",
     "Basic Machine Learning/Noise-Contrastive Estimation.md",
     "Deep Learning/Beta Variational Autoencoder.md",
     "Screenshot from 2023-03-12 20-59-02.png",
