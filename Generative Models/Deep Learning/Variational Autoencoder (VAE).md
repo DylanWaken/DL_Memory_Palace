@@ -115,7 +115,7 @@ $$\begin{align}
 
 In the previous section, we defined our optimization objective as:
 $$\log P(X) - D_{KL} (Q(z|X)||P(z|X)) = E_{z \sim Q}[\log P(X|z)] - D_{KL}(Q(z|X)|| P(z))$$
-However, since we do not have the distribution parameters for $P(z|X)$ and $P(X|z)$, we would optimize upon a single fused objective function and the data samples. 
+However, since we do not have the distribution parameters for $P(z|X)$ and $P(X|z)$, we wouitselfld optimize upon a single fused objective function and the data samples. 
 
 We can rewrite the original objective as:
 $$E_{X\sim D}[\log P(X) - D_{KL} (Q(z|X)||P(z|X))] = E_{X\sim D}[E_{z \sim Q}[\log P(X|z)] - D_{KL}(Q(z|X)|| P(z))]$$

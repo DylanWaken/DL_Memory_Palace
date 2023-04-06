@@ -1,4 +1,6 @@
 ----
+#GenerativeModel 
+
 Beta Autoencoder is the variation of the original [[Variational Autoencoder (VAE)]]. The primary objective is to apply the ideas in disentangled unsupervised learning (the process which different latent variables are corresponding to the representation of different information in the input data).
 
 > We propose augmenting the original VAE framework with a single hyperparameter β that modulates the learning constraints applied to the model. These constraints impose a limit on the capacity of the latent information channel and control the emphasis on learning statistically independent latent factors. β-VAE with β = 1 corresponds to the original VAE framework. With β > 1 the model is pushed to learn a more efficient latent representation of the data, which is disentangled if the data contains at least some underlying factors of variation that are independent.

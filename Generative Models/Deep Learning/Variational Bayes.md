@@ -39,7 +39,7 @@ $$p(\theta |X) = \frac{P(X,\theta)}{P(X)} = \frac{P(X|\theta)P(\theta)}{\sum_{\t
 - Here $\theta$ are the  latent variables or distribution parameters
 - $X$ are the observed data 
 
-The marginal likeliood is also named "evidence"
+**This marginal likeliood is also named "evidence"**
 
 Our original equation above for bayesian inference can bet translated as: $$
 P(\theta |X) = \frac{P(X,\theta)}{P(X)} = \frac{P(X|\theta)P(\theta)}{\sum_{\theta} P(X|\theta) P(\theta)} = \frac{{\text{likelihood} \cdot\text{prior}}}{\text{evidence}}

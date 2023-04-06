@@ -88,7 +88,6 @@ $$\begin{align}
 
 And since the difination of **HelmHoltz Free Energy** is average energy minus entropy times temperature:
 $$F = \langle E\rangle - TS\quad F_{G} = -\log P_{G}(I) = \langle E_{KJI} \rangle _{{KJ|I}}^G- S_{KJ|I}$$
-Our optimization target is exactly the search for minimal Helmholtz free energy.
 
 ## Variational Free Energy
 

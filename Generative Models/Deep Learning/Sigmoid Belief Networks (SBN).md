@@ -40,6 +40,21 @@ And the [[Joint Distribution]] of the entire network, or the probability of the 
 $$P(H,X;\theta) = \prod_{l=0} ^L \prod _{i=1} ^{n_{l}} P(H_{l,i}|H;\theta)$$
 ## SBN Learning Algorithm
 
+
+#### Proof of equivalence in optimizing objective
+
+In the same manner as all generative models, we are trying to minimize the KL-divergence between the sampled image from the real world images, as:
+$$\min D_{KL}(P_{data} (x)|| P_{model}(x))$$
+This optimization target is the same as maximizing the log likelihood of observed data, as:
+$$\begin{align}
+\min D_{KL}(P_{data}|| P_{model}) &= \min \sum_{x} P_{data} (x) \log \frac{P_{data}(x)}{P_{model}(x)}
+\end{align}$$
+And since the the term $P_{data}(x)$ is constant for all samples $x$, we can only optimize $P_{model}$. We expand the formula:
+$$\min \sum_{x} P_{data} (x) \log {P_{data}(x)} - P_{data} (x) \log {P_{model}(x)}$$
+The first term in the optimization target is the Gibbss entropy of data distribution, which is independent from the model's parameters. The only term that we can maximize is the later term. Since we are minimizing the negative log likelihood of observed data, it is the same as optimizing:
+$$\min \sum_{x}- \log P_{\theta}(x)$$
+for all observed data $x$, $\theta$ is the model parameters
+
 The learning objective of the SBN network is to maximize the log [[Likelihood]] of the network with respect to the observed real-world data, since we are still looking to reconstruct the distribution of the real world data.
 
 We take the log likelihood as our optimization objective and have:

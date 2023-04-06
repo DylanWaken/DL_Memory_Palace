@@ -1,5 +1,8 @@
+
 ----
 #GenerativeModel 
+
+A really good blog on the topic: https://huggingface.co/blog/encoder-decoder 
 
 ## Self Attention
 
@@ -48,7 +51,9 @@ w_{n0}&w_{n1}&\dots& w_{nn}
 -x_{t=2}- \\
 \dots \\
 -x_{t=n}-
-\end{bmatrix}$$ For every row of new data in output matrix $X'$ , the data would be a the **weighted sum** of itself and other data in the time series, as we "encode" these data correlations into the data themselves.
+\end{bmatrix}$$
+
+For every row of new data in output matrix $X'$ , the data would be a the **weighted sum** of itself and other data in the time series, as we "encode" these data correlations into the data themselves.
 
 The $Q,K,V$ matrices are named after this theorem. We applied linear transformations to the input data as:
 $$Q =  X W_{Q}\quad K= X W_{K}\quad V=XW_{v}$$
@@ -149,9 +154,34 @@ In the encoder below, only the self attention blocks are used.
 
 The decoder part of this autoencoder involves a little bit more complexity
 
-Similar to RNN-based encoder-decoder models, the transformer-based encoder-decoder models define a conditional distribution of target vectors $Y_{1:k}$​ given an input sequence $X_{1:n}$. $$p_{\theta_{dec}}(Y_{1: k}|X_{1:n})$$
+Similar to RNN-based encoder-decoder models, the transformer-based encoder-decoder models define a conditional distribution of target vectors $Y_{1:k}$​ given an input sequence $X_{1:n}$. $$p_{\theta_{dec}}(Y_{1: k}|X_{1:n})$$ (￼￼without main diagnal￼￼)
 And by the Bayes rule we can expand this as: $$p_{\theta_{dec}}(Y_{1: k}|X_{1:n}) = \prod _{i=1} ^k p_{\theta_{dec}}(y_{i }|Y_{i-1}, X_{1:n})$$
 Note: this formula says that the probability of a specific output at a time step is only conditionally dependent on the preceeding time steps, and the data points beyond this time step should not be involved in the prediction process. This is extremely important in the definnition of the decoder.
 
 To prevent the network from "using data points in the furture", the decoder attention block is designed to be **Uni-Directional**. Every data point $y_{i}$ in the generator self attention only have access to data points that came before it. $y_{1} ,\dots,y_{i-1}$ . 
 
+![[Screenshot from 2023-03-16 10-36-07.png]]
+
+The decoder includes the uni-directional self ttention and a cross-attention structure between the decoded data and the encoder inputs.
+
+The uni-directional self-attention is defined as:$$Y'' = softmax\left( LT( \frac{QK^T}{\sqrt{ d_{k} }}) \right) V +Y'_{0}$$ 
+- Here $LT$ stands for taking the lower triangle of the attention score. This operation is also called **masking** in some papers
+- By taking the upper triangular part of attention score, the linitselfear transformation will only add attention weighted preceding data points in the output sequence to the current data point. 
+
+Which in graphical representation, is shown as:
+
+![[Screenshot from 2023-03-16 11-03-28.png]]
+
+The **Cross Attention** is following the self attention layer, it is defined as the attention process among the input sequence $X_{1:n}$ and the output sequence $Y$, and then apply this attention score on the values matrix of $X$, which is defined as:
+$$Y''' = softmax\left( \frac{Q_{y}K_{x}^T}{\sqrt{ d_{k_{x}} }} \right) V_{x} + Y''$$
+The graphical representation is:
+
+![[Screenshot from 2023-03-16 11-14-32.png]]
+
+The encoder output's participation in the decoder can be also understood as a "control signal" of the decoder behaviors. This architecture is originally designed for the purpose of translation in NLP, therefore the cross attention is for the measure of similarity in representation between the source language and target language. 
+
+This is the fundamental structure of self-attention autoencoders. There exists many training algorithms/ loss design for different purposes, check the notes links to this note. 
+
+The whole architecture can be viewed below:
+
+![[eAKQu.png]]
